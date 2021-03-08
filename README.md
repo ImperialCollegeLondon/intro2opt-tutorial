@@ -1,9 +1,10 @@
 # Content #
 This repository contains the hands-on tutorials for the lecture "Optimization Models and Applications", part of the Data Science and Digitalisation in the Energy Sector module, MSc in Sustainable Energy Futures, Imperial College London. 
+
 Lecturer and author: Stefano Moret (<s.moret@imperial.ac.uk>)
 
-# How to run the model #
-The model is coded in GLPK, using the open-source solver GLPSOL. To run the model, perform the following 4 steps:
+# How to run the examples #
+The examples are coded in GLPK, using the open-source solver GLPSOL. To run the examples, perform the following 4 steps:
 
 1. Install GLPK/GLPSOL:
 
@@ -50,8 +51,7 @@ This guide could also be useful: http://www.osemosys.org/uploads/1/8/5/0/1850413
 $ glpsol -m steel.mod -o steel.out
 (You might need to use 'glspol.exe' instead of 'glpsol' on Windows)
 
-4. Check the output files: 
-if the steel.out file is correctly generated.
+4. Check the output files: the steel.out file is correctly generated.
 
 If the command at point (3) did not run, it might be that glpsol is not on your PATH. Two solutions for that:
 - (not best) instead of "glpsol" use the full path, e.g. on Mac '/usr/local/bin/glpsol  -m steel.mod'
