@@ -1,0 +1,9 @@
+# SETS
+set PROD := BANDS COILS;
+
+# PARAMETERS
+param T := 40; # hours per week
+
+param: c	B_max t	:=
+BANDS	25	6000	200
+COILS	30	4000	140;
