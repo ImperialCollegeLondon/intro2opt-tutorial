@@ -1,0 +1,33 @@
+###########
+# KnapSack problem - data file
+# Implementation of the standard Knapsack problem
+#
+# Author: S. Moret
+# Date: 09.03.2021
+# Data from: https://github.com/discreteoptimization/assignment/tree/master/knapsack/data
+###########
+
+param N := 19;
+param W := 31181;
+
+param: c w :=
+1	1945 4990
+2	321 1142
+3	2945 7390
+4	4136 10372
+5	1107 3114
+6	1022 2744
+7	1101 3102
+8	2890 7280
+9	962 2624
+10	1060 3020
+11	805 2310
+12	689 2078
+13	1513 3926
+14	3878 9656
+15	13504 32708
+16	1865 4830
+17	667 2034
+18	1833 4766
+19	16553 40006
+;
