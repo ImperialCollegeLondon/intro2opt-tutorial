@@ -8,7 +8,7 @@ param B_max {PROD}; # [t] max weekly production
 param t {PROD}; # [t/h] Production rate
 
 # DECISION VARIABLES
-var x {PROD} >= 0; # [t] ton of BANDS to produce
+var x {PROD} >= 0; # [t] ton of products to produce
 
 # CONSTRAINTS
 subject to max_prod {p in PROD}: x[p] <= B_max[p];
