@@ -23,7 +23,8 @@ maximize total_value: sum {i in OBJECTS} c[i] * x[i];
 
 # CONSTRAINTS
 subject to con1: sum {i in OBJECTS} (w[i] * x[i]) <= W;
-
+/*
 solve;
 display x;
 display total_value;
+*/

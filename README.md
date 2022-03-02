@@ -3,8 +3,19 @@ This repository contains the hands-on tutorials for the lecture "Optimization Mo
 
 Lecturer and author: Stefano Moret (<s.moret@imperial.ac.uk>)
 
-# How to run the examples #
-The examples are coded in GLPK, using the open-source solver GLPSOL. To run the examples, perform the following 4 steps:
+# What you will need #
+1. A text editor: the different file formats used in this tutorial (terminating with extensions .mod, .dat, .out, .run) can be opened and edited with standard text editors. Although most text editors will do the job, the recommended text editors are:
+
+- on Mac OS: BBEdit (https://www.barebones.com/products/bbedit/)
+- on Windows: NotePad++ (https://notepad-plus-plus.org)
+
+2. GLPK: The examples are coded in GLPK, which uses the open-source solver GLPSOL. Instructions in the next sections will guide you through the installation of GLPK.
+
+3. Command line: this is already installed on your system. On Windows, you can call the command prompt by opening the Start menu and searching for "cmd". On Mac OS, you will need to open the Terminal app.
+
+# How to install GLPK #
+The installation of GLPK will also automatically install the open-source solver GLPSOL. 
+To install GLPK and test the installation, follow these steps:
 
 1. Install GLPK/GLPSOL:
 
@@ -22,7 +33,7 @@ $ ./configure --prefix=/usr/local
 $ make  
 $ sudo make install  
 
-See if your system recognises it. Executing from the command line:
+After installing GLPK using either (a) or (b), see if your system recognises it. Executing from the command line:
 
 $ which glpsol
 
@@ -45,13 +56,13 @@ c) on Windows:
 - For facilitating the access to glpsol.exe you can add the full path (depending on your operating system, see below) from the previous point to the system variables PATH
 This guide could also be useful: http://www.osemosys.org/uploads/1/8/5/0/18504136/glpk_installation_guide_for_windows10_-_201702.pdf
 
-2. Clone/download the content of this folder
+2. Clone/download the content of this tutorial folder
 3. Navigate to the folder 'example1_steel/v1' folder via terminal/cmd prompt and execute (check glpsol documentation for more options):
 
 $ glpsol -m steel.mod -o steel.out
 (You might need to use 'glspol.exe' instead of 'glpsol' on Windows)
 
-4. Check the output files: the steel.out file is correctly generated.
+4. Check the output files: the steel.out file is correctly generated. The optimal solution is xB = 6000, xC = 1400
 
 If the command at point (3) did not run, it might be that glpsol is not on your PATH. Two solutions for that:
 - (not best) instead of "glpsol" use the full path, e.g. on Mac '/usr/local/bin/glpsol  -m steel.mod'
