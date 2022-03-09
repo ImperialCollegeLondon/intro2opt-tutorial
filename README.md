@@ -19,8 +19,11 @@ To install GLPK and test the installation, follow these steps:
 
 1. Install GLPK/GLPSOL:
 
-a) on Mac OS X (Option 1, recommended): use homebrew
-http://arnab-deka.com/posts/2010/02/installing-glpk-on-a-mac/
+a) on Mac OS X (Option 1, recommended): 
+- install homebrew following this guidance: https://brew.sh
+- From the command line execute:
+
+$ brew install glpk
 
 b) on Mac Os X (Option 2)/Linux:
 - Download the latest version of GLPK from: http://www.gnu.org/software/glpk/#downloading
